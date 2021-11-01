@@ -12,7 +12,7 @@ public final class RGBToAsciiFactory {
         ImageScalarIterator iterator = rasterScalarProcessor.iterator();
         AsciiString asciiString = new AsciiString(iterator.getScaledImageWidth(), iterator.getScaledImageHeight());
 
-        final int[] rgb = new int[3];
+        final int[] rgb = new int[4]; // Use 4 for RGBA images.
         iterator.forEachRemaining((data) -> {
             final Point oPoint = data.getOriginalImagePoint();
             final Point sPoint = data.getScaledImagePoint();

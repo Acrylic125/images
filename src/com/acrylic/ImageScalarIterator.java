@@ -25,10 +25,8 @@ public class ImageScalarIterator implements Iterator<ImageScalarData> {
 
     public static ImageScalarIterator iteratorByOriginalImage(int oImageWidth, int oImageHeight,
                                                               float imageScalarX, float imageScalarY) {
-        System.out.println(oImageWidth + " " + oImageHeight);
         final int scaledImageWidth = (int) Math.floor(oImageWidth * imageScalarX),
                   scaledImageHeight = (int) Math.floor(oImageHeight * imageScalarY);
-        System.out.println(scaledImageWidth + " " + scaledImageHeight);
         return iteratorByScaledImage(scaledImageWidth, scaledImageHeight, imageScalarX, imageScalarY);
     }
 

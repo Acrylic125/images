@@ -5,6 +5,14 @@ public class CharMapRGBToAscii implements RGBToAscii {
     private final char[] charMap;
     private static final float WHITE_HEX = (255 << 16) | (255 << 8) | 255;
 
+    @Deprecated
+    public static CharMapRGBToAscii sequentialAscii(int min, int max) {
+        char[] chars = new char[max - min + 1];
+        for (int i = min; i <= max; i++)
+            chars[i - min] = Character.forDigit(i, 10);
+        return new CharMapRGBToAscii(chars);
+    }
+
     public CharMapRGBToAscii(char[] charMap) {
         this.charMap = charMap;
     }

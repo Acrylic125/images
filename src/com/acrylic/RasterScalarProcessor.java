@@ -8,6 +8,12 @@ public final class RasterScalarProcessor implements Iterable<ImageScalarData> {
     private final Raster raster;
     private final float scalarX, scalarY;
 
+    public RasterScalarProcessor(Raster raster, int x, int y) {
+        this.raster = raster;
+        this.scalarX = (float) x / raster.getWidth();
+        this.scalarY = (float) y / raster.getHeight();
+    }
+
     public RasterScalarProcessor(Raster raster, float scalarX, float scalarY) {
         this.raster = raster;
         this.scalarX = scalarX;

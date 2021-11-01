@@ -1,16 +1,10 @@
 package com.acrylic;
 
-import com.acrylic.AsciiString;
-import com.acrylic.ImageScalarIterator;
-import com.acrylic.RasterScalarProcessor;
 import com.acrylic.rgbtoascii.CharMapRGBToAscii;
 import com.acrylic.rgbtoascii.RGBToAscii;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public final class Images {
 
@@ -28,7 +22,7 @@ public final class Images {
         return asciiString;
     }
 
-    public static AsciiString toAsciiString(BufferedImage image, RGBToAscii rgbToAscii, int width, int height) throws MalformedURLException {
+    public static AsciiString toAsciiString(BufferedImage image, RGBToAscii rgbToAscii, int width, int height) {
         RasterScalarProcessor processor = new RasterScalarProcessor(image.getRaster(), width, height);
         return Images.toAsciiString(processor, rgbToAscii);
     }

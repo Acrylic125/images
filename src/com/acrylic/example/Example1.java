@@ -1,14 +1,10 @@
 package com.acrylic.example;
 
-import com.acrylic.AsciiString;
 import com.acrylic.Images;
-import com.acrylic.RasterScalarProcessor;
 import com.acrylic.rgbtoascii.CharMapRGBToAscii;
 
 import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class Example1 {
@@ -29,6 +25,8 @@ public class Example1 {
     }
 
     /**
+     * Image: https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg
+     *
      * aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
      * aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
      * aaaaaaaaaaaaaaaaaaaaaaaaaabdgbaaaaaaaaaa
@@ -57,6 +55,8 @@ public class Example1 {
     }
 
     /**
+     * Image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png
+     *
      * aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
      * aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
      * aaaaaaaaazzzzzaaaaaaaaaaaaazzzzzaaaaaaaa
@@ -85,6 +85,8 @@ public class Example1 {
     }
 
     /**
+     * https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunrise-quotes-21-1586892331.jpg
+     *
      * bacedeurqqppqrsuuvwzzzzzzyxyxtnpsulmtdjc
      * bbadbfjtspkhhnrpqssxzzzzzyvxvsssvvqhcmnd
      * aaebgevtssspmnrttwxzzzzzzwvyyxxxotjddfkw

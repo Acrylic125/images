@@ -5,11 +5,10 @@ public final class AsciiString {
     // 1st [] represents rows.
     // 2nd [] represents columns.
     private final char[][] asciiRowColumns;
-    private final int sizeX, sizeY;
+    private final int sizeY;
 
     public AsciiString(int sizeX, int sizeY) {
         this.asciiRowColumns = new char[sizeY][sizeX];
-        this.sizeX = sizeX;
         this.sizeY = sizeY;
     }
 

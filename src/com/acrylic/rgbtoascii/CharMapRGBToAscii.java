@@ -18,7 +18,7 @@ public class CharMapRGBToAscii implements RGBToAscii {
     }
 
     @Override
-    public char convertFromRGB(int r, int g, int b) {
+    public char convertFromRGB(int r, int g, int b, int a) {
         float rgbHex = (r << 16) | (g << 8) | b;
         return charMap[(rgbHex == WHITE_HEX) ? charMap.length - 1 :
                                                ((int) (Math.floor((rgbHex * charMap.length) / WHITE_HEX)))];

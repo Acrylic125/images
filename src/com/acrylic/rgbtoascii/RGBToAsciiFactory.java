@@ -17,7 +17,7 @@ public final class RGBToAsciiFactory {
             final Point oPoint = data.getOriginalImagePoint();
             final Point sPoint = data.getScaledImagePoint();
             rasterScalarProcessor.getRaster().getPixel(oPoint.x, oPoint.y, rgb);
-            asciiString.setCharacter(sPoint.x, sPoint.y, rgbToAscii.convertFromRGB(rgb[0], rgb[1], rgb[2]));
+            asciiString.setCharacter(sPoint.x, sPoint.y, rgbToAscii.convertFromRGB(rgb[0], rgb[1], rgb[2], rgb[3]));
         });
         return asciiString;
     }
